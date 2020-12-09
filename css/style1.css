@@ -1,0 +1,278 @@
+html {
+    height: 100%;
+
+}
+
+#navigation-bar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas:"about store . gmail image menu sign-in";
+    margin: 0 20px;
+
+}
+a  {
+    text-decoration: none;
+    font-family: Arial, Sans-serif;
+    font-size: 13px;
+    color: #000;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+    opacity: 0.75;
+    display: inline-block;
+    padding-left: 15px;
+
+}
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+    opacity: 0.75;
+    display: inline-block;
+    padding-left: 15px;
+}
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+    opacity: 0.75;
+    display: inline-block;
+    padding-left: 15px;
+    margin-right: 10px;
+}
+#image {
+    grid-area: image;
+    justify-self: center;
+    align-self: center;
+    opacity: 0.75;
+    display: inline-block;
+    padding-left: 15px;
+    margin-right: 10px;
+}
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+    display: inline-block;
+    padding-left: 15px;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+
+#sign-in {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+    background-color: #4683ea;
+    height: 30px;
+    width: 65px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+    border-radius: 5%;
+    margin-right: 10px;
+    margin-left: 10px;
+
+
+}
+
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 230px 0px 100px 500px;
+    grid-template-areas:
+    ". logo ."
+    ". share ."
+    ". search ."
+    ". flexbox .";
+
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+
+}
+
+#share {
+    grid-area: share;
+    justify-self: end;
+    align-self: end;
+    margin-right: 90px;
+    opacity: 0.75;
+
+}
+
+#search{
+
+    grid-area: search;
+    height: 30px;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    border: 1px solid grey;
+    border-radius: 30px;
+    opacity: 0.3;
+
+}
+
+#search:focus {
+    box-shadow: 1px 1 px 5 px grey;
+}
+
+#search:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#flexbox {
+    grid-area: flexbox;
+    justify-self: center;
+    text-align: center;
+}
+
+#search-buttons {
+    display: flex;
+}
+
+.trending {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+#google-search {
+    border: none;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+     }
+
+#lucky-search {
+    border: none;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+#google-search:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226);
+
+
+
+}
+#lucky-search:hover {
+    border: 1px solid rgba(0, 0, 0, 0.226) ;
+
+
+    }
+#footer {
+    position: relative;
+    bottom: 0;
+    display: grid;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: 10px;
+    grid-template-columns: 90px 90px 150px 1fr 50px 185px 1fr 70px 70px;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "advertising business hsw .leaf cn. privacy terms settings";
+
+
+}
+
+#advertising{
+    grid-area: advertising;
+    justify-self:center;
+    align-self: center;
+    opacity: 0.75;
+    display: inline-block;
+    padding-left: 15px;
+}
+#business{
+    grid-area: business;
+    justify-self:center;
+    align-self: center;
+    opacity: 0.75;
+    display: inline-block;
+    padding-left: 15px;
+}
+#hsw{
+    grid-area: hsw;
+    justify-self:center;
+    align-self: center;
+    opacity: 0.75;
+    display: inline-block;
+    padding-left: 15px;
+}
+#leaf{
+    grid-area: leaf;
+    justify-self:end;
+    align-self: center;
+    margin-left: 85px;
+
+}
+#cn{
+    grid-area: cn;
+    justify-self:center;
+    align-self: center;
+    margin-left: -25px;
+    opacity: 0.75;
+}
+#privacy{
+    grid-area: privacy;
+    justify-self:center;
+    align-self: center;
+    opacity: 0.75;
+    display: inline-block;
+    padding-left: 15px;
+}
+#terms{
+    grid-area: terms;
+    justify-self:center;
+    align-self: center;
+    opacity: 0.75;
+    display: inline-block;
+    padding-left: 15px;
+}
+#settings{
+    grid-area: settings;
+    justify-self:center;
+    align-self: center;
+    opacity: 0.75;
+    display: inline-block;
+    padding-left: 15px;
+}
